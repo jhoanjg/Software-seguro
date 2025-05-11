@@ -11,6 +11,7 @@ type Commit interface {
 	Insert(ctx context.Context, commit *entity.Commit) error
 }
 
+// Simulación de implementación real
 type CommitRepo struct{}
 
 func (r *CommitRepo) Insert(ctx context.Context, commit *entity.Commit) error {
